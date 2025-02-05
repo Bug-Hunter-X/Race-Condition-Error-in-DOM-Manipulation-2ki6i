@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // This line will cause an error in some browsers if the script is placed before the div
+    document.getElementById("myDiv").innerHTML += "<p>Appended text</p>";
+  </script>
+</body>
+</html>
