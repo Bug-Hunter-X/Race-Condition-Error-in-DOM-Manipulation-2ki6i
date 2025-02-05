@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Solution 1: Place script at the end of the body
+    document.getElementById("myDiv").innerHTML += "<p>Appended text</p>";
+  </script>
+  
+  <!--Alternative Solution 2: Use DOMContentLoaded event -->
+  <!--<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.getElementById("myDiv").innerHTML += "<p>Appended text</p>";
+    });
+  </script>-->
+</body>
+</html>
